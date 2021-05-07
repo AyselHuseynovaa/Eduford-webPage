@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Aisel Guseinova" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <div class="webPage">
+      <header class="sub-header">
+        <nav>
+          <a href="./index.html"> <img src="./eduford_img/logo.png" /></a>
+          <div class="navlinks" id="navLinks">
+            <i class="fas fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li class="navlist"><a href="./index.html">Home</a></li>
+              <li class="navlist"><a href="./about.html">About</a></li>
+              <li class="navlist"><a href="./course.html">Course</a></li>
+              <li class="navlist"><a href="./blog.html">Blog</a></li>
+              <li class="navlist"><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificate & Online Programs for 2021</h1>
+      </header>
+      <!-- blog -->
+      <div class="blog-content">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+          <div class="col left-col">
+            <div class="card blog-card">
+              <img src="./eduford_img/certificate.jpg" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Our Certificate & Online Programs for 2021
+                </h5>
+                <br />
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  eaque amet maxime eos consequatur, provident distinctio aut
+                  ullam est nesciunt similique temporibus a quidem dicta?
+                </p>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  exercitationem nostrum vitae quas atque? Doloremque corporis
+                  expedita ea fugiat incidunt dignissimos eveniet velit omnis
+                  dolores vel, odit pariatur nostrum officia aliquid quia vitae
+                  quidem debitis!
+                </p>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Obcaecati expedita dolore inventore odit nulla tempora
+                  asperiores vitae laboriosam aperiam debitis praesentium,
+                  fugiat dolorum veniam id quaerat dignissimos reiciendis
+                  nostrum aspernatur repellendus exercitationem maxime, dolores
+                  voluptates. Magnam cum deleniti earum illum!
+                </p>
+                <br />
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+                  eaque amet maxime eos consequatur, provident distinctio aut
+                  ullam est nesciunt similique temporibus a quidem dicta?
+                </p>
+
+                <div class="comment-box">
+                    <h3>Leave a comment </h3>
+                  <form class="comment-form">
+                    <input type="text" placeholder="Enter Name"/>
+                    <input type="email"  placeholder="Enter Email"/>
+                    <textarea >Your Comment</textarea>
+                    <button type="submit" class="red-btn">Post comment</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col right-col">
+            <div class="card blog-card">
+              <h3>Post Categories</h3>
+              <div class="categories">
+                <span>Business Analytics</span>
+                <span> 21 </span>
+              </div>
+              <div class="categories">
+                <span>Data Science</span>
+                <span> 25 </span>
+              </div>
+              <div class="categories">
+                <span>Computer Science</span>
+                <span> 26 </span>
+              </div>
+              <div class="categories">
+                <span>Machine Learning</span>
+                <span> 28 </span>
+              </div>
+              <div class="categories">
+                <span>AutoCad</span>
+                <span> 42 </span>
+              </div>
+              <div class="categories">
+                <span>Journalism</span>
+                <span> 20 </span>
+              </div>
+              <div class="categories">
+                <span>Commerce</span>
+                <span> 31 </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <h4>About Us</h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+          eligendi sed magnam ab eius culpa <br />
+          tempora, nostrum debitis qui consequatur?
+        </p>
+        <div class="icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+        <p>Made with <i class="far fa-heart"></i> by Easy tutorials</p>
+      </footer>
+    </div>
+
+    <!-- js toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+      integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+      integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
